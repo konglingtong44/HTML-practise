@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单练习</title>
+</head>
+
+<body>
+	<form method="get" action="http://www.baidu.com">
+    <fieldset>
+    	<legend>上面的表用户名格</legend>
+        <label for="user">用户名</label>
+        <input id="user" name="user"><br>
+        <button type="submit"> 提交 </button>
+    </fieldset>
+    </form>
+    
+    <form method="post" action="http://www.sousou.com">
+    <fieldset>
+    	<legend>第二个文本框密码测试</legend>
+        <label for="password">密码</label>
+        <input  required type="password" id="password" name="password" autocomplete="on">
+        <br>
+        <button type="submit">提交</button>
+    </fieldset>
+    </form>
+    
+    <form action="http://www.baidu.com">
+    <fieldset>
+    <legend>第三个表格</legend>
+    <label for="3">第三个文本框默认数据123</label>
+    <input id="3" type="text" value="123" size="40" maxlength="10"><br>
+    
+    <label for="4">第四个文本框提示测试</label>
+    <input id="4" name="4" type="text" placeholder="提示测试">
+    
+    <br>
+    <label for="5">第五个List测试</label>
+    <input list="5">
+    <datalist id="5">
+    	<option value="1">第一个</option>
+        <option value="2">第二个</option>
+        <option value="11">第十一个</option>
+        <option>第0个</option>   
+    </datalist>
+    
+    <br>
+    <label for="6">第六个search测试</label>
+    <input id="6" type="search">
+    <br>
+    
+    <label for="7">第七个checkbox测试</label>
+    <input type="checkbox" name="checkbox" id="7">1
+    <input type="checkbox" name="checkbox" id="7">2
+    <br>
+    
+    <label for="8">第八个radio测试</label>
+    <input type="radio" name="radio">1
+    <input type="radio" name="radio">2
+    <br>
+    
+    <label for="9">第八个date测试</label>
+    <input type="date" name="date">
+	</fieldset>
+    </form>
+    
+    <form action="http://www.baidu.com">
+    <fieldset>
+    	<legend>combox_practise</legend>
+        <select name="combox-practise1">
+        	<optgroup label="combox1">
+            	<option value="1">显示1</option>
+                <option value="2">显示2</option>
+            </optgroup>
+            <optgroup label="combox2">
+            	<option value="3">显示3</option>
+                <option value="4">显示4</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    </form>
+    
+    <form action="http://www.baidu.com">
+    <fieldset>
+    	<legend>textarea-practise</legend>
+        <label for="10">testarea</label><br>
+        <textarea  required name="textarea" id="10" rows="10" cols="20"></textarea>
+        <button type="submit">提交</button>
+    </fieldset>
+	</form>
+    
+    <form oninput="res.value = num1.valueAsNumber * num2.valueAsNumber" action="http://www.baidu.com">
+    <fieldset>
+    <legend>input-output</legend>
+    <input required type="number" id="num1"  min="5" max="10">
+    <input required type="number" id="num2" required >
+    <output for="num1 num2" name="res">
+    </fieldset>
+    </form>
+    
+    <form action="http://www.baidu.com">
+    <fieldset>
+    	<legend>fanwei</legend>
+        <input type="number" required min="1" max="100">
+        <input type="text" pattern="^[\d]{2,4}\-[\d]{2,6}$">
+        <button>提交</button>
+    </fieldset>
+    </form>
+</body>
+</html>
